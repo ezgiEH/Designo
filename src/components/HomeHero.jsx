@@ -39,7 +39,7 @@ const Text = styled.p`
 `
 
 const Button = styled.button`
-  width: 152px;
+  /* width: 152px;
   height: 56px;
   background-color: var(--White);
   border: none;
@@ -50,7 +50,7 @@ const Button = styled.button`
   &:hover{
     background-color: var(--Light-Peach);
     color: var(--White);
-  }
+  } */
 `
 
 
@@ -63,7 +63,7 @@ const HomeHero = () => {
         <Text>With over 10 years in the industry, we are experienced in creating 
           fully responsive websites, app design, and engaging brand experiences. 
           Find out more about our services.</Text>
-        <Link to="/about"><Button>Learn More</Button></Link>
+        <Link to="/about"><Button className='btn-primary'>Learn More</Button></Link>
       </HeroContent>
     </HeroContainer>
   )
