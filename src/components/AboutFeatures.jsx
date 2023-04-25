@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import CardImageOne from '../assets/about/desktop/image-world-class-talent.jpg'
 import CardImageTwo from '../assets/about/desktop/image-real-deal.jpg'
 import LocationList from './LocationList'
+import { mobile, tablet } from '../responsive'
 
 
 const FeaturesContainer = styled.div`
@@ -11,6 +12,9 @@ const FeaturesContainer = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 45px;
+    ${mobile({
+        width: "100vw",
+    })}
 `
 
 const AboutCard = styled.div`
@@ -23,9 +27,17 @@ const AboutCard = styled.div`
     flex-direction: ${props => props.right ? "row-reverse" : "row"};
     overflow: hidden;
     box-shadow: var(--Box-Shadow);
+    ${mobile({
+       flexDirection: "column-reverse",
+       height: "auto",
+       textAlign: "center",
+    })}
 `
 const CardContent = styled.div`
     padding: 90px 60px;
+    ${mobile({
+       padding: "30px",
+    })}
 `
 
 const Header = styled.h2`

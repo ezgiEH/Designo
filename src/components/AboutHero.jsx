@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Circle from '../assets/about/desktop/bg-pattern-hero-about-desktop.svg'
 import HeroImage from '../assets/about/desktop/image-about-hero.jpg'
+import { mobile, tablet } from '../responsive'
 
 const HeroContainer = styled.div`
     width: 1100px;
@@ -12,10 +13,18 @@ const HeroContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    ${mobile({
+      width: "100vw",
+      flexDirection: "column-reverse",
+      height: "auto",
+    })}
 `
 const AboutContent = styled.div`
     padding: 90px 60px;
     color: var(--White);
+    ${mobile({
+     textAlign: "center",
+    })}
 `
 
 const Header = styled.h1``

@@ -78,6 +78,10 @@ const Header = styled.h2`
     text-transform: uppercase;
     color: var(--White);
     font-weight: 500;
+    ${mobile({
+        fontSize: "28px",
+        lineHeight: "36px"
+    })}
 `
 
 const BoxButton = styled.button`

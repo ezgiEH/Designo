@@ -2,6 +2,7 @@ import React from 'react'
 import data from '../data.json'
 import styled from 'styled-components'
 import Circle from '../assets/shared/desktop/bg-pattern-two-circles.svg'
+import { mobile, tablet } from '../responsive'
 
 const HeroContainer = styled.div`
     width: 1100px;
@@ -15,6 +16,9 @@ const HeroContainer = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: var(--Border-radius);
+    ${mobile({
+        width: "100vw",
+    })}
 `
 const Header =styled.h1`
     color: var(--White);
@@ -23,6 +27,9 @@ const Text =styled.p`
     color: var(--White);
     width: 40%;
     text-align: center;
+    ${mobile({
+        width: "90%",
+    })}
 `
 
 

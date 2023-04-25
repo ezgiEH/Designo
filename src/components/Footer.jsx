@@ -20,13 +20,17 @@ const FooterContainer = styled.div`
   align-items: flex-end;
   justify-content: center;
   ${mobile({
-    height: "515px",
+    height: "715px",
+    alignItems: "center",
   })}
 `
 const Wrapper = styled.div`
   width: 1110px;
+  display: flex;
+  flex-direction: column;
   ${mobile({
-    width: "375px"
+    width: "375px",
+    gap: "45px",
   })}
 `
 const FooterMenu = styled.div`
@@ -38,11 +42,19 @@ const FooterMenu = styled.div`
     ${mobile({
         flexDirection: "column",
         height: "auto",
-        gap: "15px",
+        gap: "30px",
+        borderBottom: "none",
     })}
 `
 const LogoSection = styled.div`
     width: 196px;
+    ${mobile({
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      width: "100vw",
+      borderBottom: "1px solid var(--Light-Gray)",
+    })}
 `
 const Image = styled.img`
     width: 196px;
@@ -109,6 +121,7 @@ const FooterSocial = styled.div`
     gap: 15px;
     ${mobile({
       justifyContent: "center",
+      margin: "15px 0"
   })}
 `
 const Icon = styled.img`

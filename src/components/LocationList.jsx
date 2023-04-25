@@ -4,8 +4,7 @@ import Canada from '../assets/shared/desktop/illustration-canada.svg'
 import Australia from '../assets/shared/desktop/illustration-australia.svg'
 import UnitedKingdom from '../assets/shared/desktop/illustration-united-kingdom.svg'
 import { Link } from 'react-router-dom'
-
-
+import { mobile } from '../responsive'
 
 
 const ListContainer = styled.div`
@@ -14,6 +13,10 @@ const ListContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    ${mobile({
+        width: "100vw",
+        flexDirection: "column",
+    })}
 `
 const ListItem = styled.div`
     width: 350px;

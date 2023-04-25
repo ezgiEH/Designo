@@ -1,6 +1,7 @@
 import React from 'react'
 import data from '../data.json'
 import styled from 'styled-components'
+import { mobile, tablet } from '../responsive'
 
 const ProjectsContainer = styled.div`
     width: 1100px;
@@ -8,6 +9,11 @@ const ProjectsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
+    ${mobile({
+        width: "100vw",
+        alignItems: "center",
+        justifyContent: "center",
+    })}
 `
 const ProjectBox = styled.div`
     width: 350px;

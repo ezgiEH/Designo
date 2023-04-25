@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import data from '../data.json'
+import { mobile, tablet } from '../responsive'
 
 const OtherContainer = styled.div`
     width: 1100px;
@@ -8,6 +9,10 @@ const OtherContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    ${mobile({
+        width: "100vw",
+        flexDirection: "column",
+    })}
 `
 const ItemBox = styled.div`
     position: relative;
