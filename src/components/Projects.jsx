@@ -19,7 +19,11 @@ const ProjectBox = styled.div`
     justify-content: flex-start;
     border-radius: var(--Border-radius);
     overflow: hidden;
+    box-shadow: var(--Box-Shadow);
     cursor: pointer;
+    &:hover{
+        box-shadow: var(--Box-Shadow-Hover);
+    }
 `
 const Image = styled.img`
     width: 350px;

@@ -2,9 +2,6 @@ import React from 'react'
 import data from '../data.json'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import WebImage from '../assets/home/desktop/image-web-design-large.jpg'
-import AppImage from '../assets/home/desktop/image-app-design.jpg'
-import GraphImage from '../assets/home/desktop/image-graphic-design.jpg'
 
 
 const ServicesContainer = styled.div`
@@ -85,7 +82,7 @@ const ServicesList = () => {
         <ServicesContainer>
             <LeftSection>
                 <ItemBox>
-                    <Image src={WebImage}></Image>
+                    <Image src={data[0].image}></Image>
                     <Link to={`/services/${data[0].id}`}>
                         <BoxContent>
                             <Header>{data[0].name}</Header>
@@ -96,7 +93,7 @@ const ServicesList = () => {
             </LeftSection>
             <RightSection>
                 <ItemBox small>
-                    <Image src={AppImage}></Image>
+                    <Image src={data[1].image}></Image>
                     <Link to={`/services/${data[1].id}`}>
                         <BoxContent>
                             <Header>{data[1].name}</Header>
@@ -105,7 +102,7 @@ const ServicesList = () => {
                     </Link>
                 </ItemBox>
                 <ItemBox small>
-                    <Image src={GraphImage}></Image>
+                    <Image src={data[2].image}></Image>
                     <Link to={`/services/${data[2].id}`}>
                         <BoxContent>
                             <Header>{data[2].name}</Header>

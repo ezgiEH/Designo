@@ -3,6 +3,7 @@
         "id": 0,
         "name": "Web Design",
         "description": "We build websites that serve as powerful marketing tools and bring memorable brand experiences.",
+        "image": "../assets/home/desktop/image-web-design-large.jpg",
         "projects": [
             {
                 "name":"EXPRESS",
@@ -40,6 +41,7 @@
         "id": 1,
         "name": "App Design",
         "description": "Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.",
+        "image": "../assets/home/desktop/image-app-design.jpg",
         "projects": [
             {
                 "name":"AIRFILTER",
@@ -72,6 +74,7 @@
         "id": 2,
         "name": "Graphic Design",
         "description": "We deliver eye-catching branding materials that are tailored to meet your business objectives.",
+        "image": "../assets/home/desktop/image-graphic-design.jpg",
         "projects": [
             {
                 "name":"TIM BROWN",
