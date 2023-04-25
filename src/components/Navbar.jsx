@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Logo from '../assets/shared/desktop/logo-dark.png'
 import { Link } from 'react-router-dom'
+import { mobile, tablet } from '../responsive'
 
 const Container = styled.div`
     width: 100vw;
@@ -15,6 +16,10 @@ const NavbarContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    ${mobile({
+        width: "375px",
+        height: "96px"
+    })}
 `
 const LogoSection = styled.div`
     width: 196px;
@@ -29,6 +34,9 @@ const MenuSection = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    ${mobile({
+        display: "none",
+    })}
 `
 const MenuItem = styled.button`
     background: transparent;

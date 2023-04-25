@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Pattern from '../assets/shared/desktop/bg-pattern-three-circles.svg'
+import { mobile, tablet } from '../responsive'
+
 
 const TouchContainer = styled.div`
     width: 920px;
@@ -13,10 +15,22 @@ const TouchContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     z-index: 2;
+    ${mobile({
+        width:"327px",
+        height:"380px",
+        padding: "0",
+        flexDirection : "column",
+        justifyContent: "center",
+    })}
 `
 const MessageBox = styled.div`
     width: 460px;
     color: var(--White);
+    ${mobile({
+        width:"280px",
+        height:"190px",
+        textAlign :" center",
+    })}
 `
 
 const Header = styled.header`
@@ -24,6 +38,9 @@ const Header = styled.header`
     font-size: 40px;
     line-height: 40px;
     font-weight: 500;
+    ${mobile({
+        width:"100%",
+    })}
 `
 
 const Text = styled.p``

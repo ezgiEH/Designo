@@ -7,7 +7,7 @@ import Twitter from '../assets/shared/desktop/icon-twitter.svg'
 import Instagram from '../assets/shared/desktop/icon-instagram.svg'
 import Pinterest from '../assets/shared/desktop/icon-pinterest.svg'
 import Youtube from '../assets/shared/desktop/icon-youtube.svg'
-
+import { mobile, tablet } from '../responsive'
 
 
 const FooterContainer = styled.div`
@@ -19,9 +19,15 @@ const FooterContainer = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  ${mobile({
+    height: "515px",
+  })}
 `
 const Wrapper = styled.div`
   width: 1110px;
+  ${mobile({
+    width: "375px"
+  })}
 `
 const FooterMenu = styled.div`
     height: 89px;
@@ -29,6 +35,11 @@ const FooterMenu = styled.div`
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--Light-Gray);
+    ${mobile({
+        flexDirection: "column",
+        height: "auto",
+        gap: "15px",
+    })}
 `
 const LogoSection = styled.div`
     width: 196px;
@@ -43,6 +54,10 @@ const MenuSection = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    ${mobile({
+        flexDirection: "column",
+        gap: "15px",
+    })}
 `
 const MenuItem = styled.button`
     background: transparent;
@@ -64,6 +79,9 @@ const FooterBottom = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  ${mobile({
+        flexDirection: "column",
+  })}
 `
 
 const FooterBox = styled.div`
@@ -72,6 +90,10 @@ const FooterBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  ${mobile({
+      alignItems: "center",
+      padding :"15px 0"
+  })}
 `
 
 const Text = styled.span`
@@ -85,6 +107,9 @@ const FooterSocial = styled.div`
     align-items: center;
     justify-content: flex-end;
     gap: 15px;
+    ${mobile({
+      justifyContent: "center",
+  })}
 `
 const Icon = styled.img`
   &:hover{

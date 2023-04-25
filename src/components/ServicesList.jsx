@@ -2,7 +2,7 @@ import React from 'react'
 import data from '../data.json'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-
+import { mobile, tablet } from '../responsive'
 
 const ServicesContainer = styled.div`
     width: 1100px;
@@ -10,6 +10,12 @@ const ServicesContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    ${mobile({
+        width: "375px",
+        flexDirection: "column",
+        height: "auto",
+        gap: "45px",
+    })}
 `
 const LeftSection = styled.div`
     
@@ -20,7 +26,9 @@ const RightSection = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
+    ${mobile({
+        gap: "45px",
+    })}
 `
 const ItemBox = styled.div`
     position: relative;
@@ -36,7 +44,10 @@ const ItemBox = styled.div`
         background-color: transparent;
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
-   
+    ${mobile({
+        width: "337px",
+        height: "350px",
+    })}
 `
 
 const Image = styled.img`

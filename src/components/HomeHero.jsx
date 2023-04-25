@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import HeroPhone from '../assets/home/desktop/image-hero-phone.png'
 import { Link } from 'react-router-dom'
+import { mobile, tablet } from '../responsive'
 
 const HeroContainer = styled.div`
   width: 1100px;
@@ -15,6 +16,10 @@ const HeroContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  ${mobile({
+    width: "375px",
+    flexDirection: "column",
+  })}
 `
 const Image = styled.img`
   position: absolute;
@@ -23,15 +28,35 @@ const Image = styled.img`
   width: 450px;
   height: 810px;
   object-fit: cover;
+  ${mobile({
+    width:"284px",
+    height:"573px",
+    bottom: "-240px",
+    right: "12%"
+  })}
 `
 const HeroContent = styled.div`
   padding: 90px;
   width: 540px;
   height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  ${mobile({
+    width: "90%",
+    height: "312px",
+    textAlign: "center",
+    alignItems :"center",
+    padding:"0px",
+  })}
 `
 const Header = styled.h1`
   color: var(--White);
   font-weight: 500;
+  ${mobile({
+    fontSize :"30px",
+    lineHeight: "36px"
+  })}
 `
 
 const Text = styled.p`

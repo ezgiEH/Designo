@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Passionate from '../assets/home/desktop/illustration-passionate.svg'
 import Resourceful from '../assets/home/desktop/illustration-resourceful.svg'
 import Friendly from '../assets/home/desktop/illustration-friendly.svg'
-
+import { mobile, tablet } from '../responsive'
 
 const FeaturesContainer = styled.div`
     width: 1100px;
@@ -13,7 +13,11 @@ const FeaturesContainer = styled.div`
     align-items: center;
     justify-content: center;
     gap: 25px;
-    
+    ${mobile({
+        width: "100vw",
+        flexDirection : "column",
+        height: "auto",
+    })}
 `
 const FeaturesBox = styled.div`
     width: 350px;
