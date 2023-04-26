@@ -74,23 +74,31 @@ const Icon = styled.img`
     object-fit: cover;
 `
 const MobileMenuContainer = styled.div`
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background:rgba(0, 0, 0, 0.5);
-    top: 0;
-    left: 0;
-    z-index: 2;
+    display: none;
+    ${mobile({
+        position: "absolute",
+        width: "100vw",
+        height: "100vh",
+        background:"rgba(0, 0, 0, 0.5)",
+        top: "0",
+        left: "0",
+        zIndex: "2",
+    })}
 `
 const MobileMenu = styled.div`
-    width: 100vw;
-    height: 235px;
-    padding: 15px 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    background: var(--Black);
+    display: none;
+    transition: 2ms all ease-in;
+
+    ${mobile({
+        width: "calc(100vw - 60px)",
+        height: "235px",
+        padding: "15px 30px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
+        justifyContent: "space-around",
+        background: "var(--Black)",
+    })}
 `
 const MobileMenuItem = styled.button`
     background: transparent;

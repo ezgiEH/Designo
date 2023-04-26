@@ -29,7 +29,11 @@ const AboutContent = styled.div`
 
 const Header = styled.h1``
 const Text = styled.p``
-const Image = styled.img``
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`
 
 const AboutHero = () => {
   return (
