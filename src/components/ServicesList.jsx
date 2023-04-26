@@ -7,7 +7,7 @@ import { mobile, tablet } from '../responsive'
 const ServicesContainer = styled.div`
     width: 1100px;
     height: 640px;
-    margin: 135px 0;
+    margin-top: 135px;
     display: flex;
     align-items: center;
     justify-content: space-between;
