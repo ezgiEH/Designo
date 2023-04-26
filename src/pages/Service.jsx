@@ -5,7 +5,8 @@ import ServiceHero from '../components/ServiceHero'
 import GetInTouch from '../components/GetInTouch'
 import Footer from '../components/Footer'
 import Projects from '../components/Projects'
-import OtherServices from '../components/OtherServices'
+import ServiceList from '../components/ServicesList'
+
 
 const ServiceContainer = styled.div`
     width: 100%;
@@ -23,7 +24,7 @@ const Service = () => {
     <ServiceContainer>
       <ServiceHero id = {id}/>  
       <Projects id = {id}/>
-      <OtherServices id = {id}/>
+      <ServiceList />
       <GetInTouch />
       <Footer />
     </ServiceContainer>

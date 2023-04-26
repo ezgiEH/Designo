@@ -60,7 +60,6 @@ const Projects = ({id}) => {
             </ProjectBox>
             })
         }
-        
     </ProjectsContainer>
   )
 }

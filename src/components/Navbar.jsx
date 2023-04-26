@@ -87,8 +87,6 @@ const MobileMenuContainer = styled.div`
 `
 const MobileMenu = styled.div`
     display: none;
-    transition: 2ms all ease-in;
-
     ${mobile({
         width: "calc(100vw - 60px)",
         height: "235px",
