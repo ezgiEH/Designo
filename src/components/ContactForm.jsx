@@ -39,6 +39,8 @@ const FormSection = styled.div`
     ${mobile({
         width: "90%",
         textAlign: "center",
+        height: "387px",
+        
     })}
 `
 const Form = styled.form`
