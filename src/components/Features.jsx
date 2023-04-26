@@ -8,7 +8,7 @@ import { mobile, tablet } from '../responsive'
 const FeaturesContainer = styled.div`
     width: 1100px;
     height: 412px;
-    margin: 105px 0;
+    margin: 45px 0;
     display: flex;
     align-items: center;
     justify-content: center;
