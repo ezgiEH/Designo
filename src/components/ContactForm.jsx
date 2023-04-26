@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { mobile } from '../responsive'
 
 const FormContainer = styled.div`
     width: 1100px;
@@ -9,11 +10,20 @@ const FormContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    ${mobile({
+        width: "375px",
+        flexDirection: "column",
+        height: "764px"
+    })}
 `
 
 const FormContent = styled.div`
     width: 40%;
     color: var(--White);
+    ${mobile({
+        width: "90%",
+        textAlign: "center",
+    })}
 `
 
 const Header = styled.h2``
@@ -26,6 +36,10 @@ const FormSection = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    ${mobile({
+        width: "90%",
+        textAlign: "center",
+    })}
 `
 const Form = styled.form`
     width: 100%;

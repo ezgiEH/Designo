@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import CA from '../assets/locations/desktop/image-map-canada.png'
 import AU from '../assets/locations/desktop/image-map-australia.png'
 import UK from '../assets/locations/desktop/image-map-united-kingdom.png'
+import { mobile } from '../responsive'
 
 const LocationsContainer = styled.div`
     width: 1100px;
@@ -12,6 +13,10 @@ const LocationsContainer = styled.div`
     align-items: center;
     justify-content: center;
     gap: 45px;
+    ${mobile({
+        width: "100vw",
+        margin:"0",
+    })}
 `
 const LocationItem = styled.div`
     width: 100%;
@@ -20,7 +25,10 @@ const LocationItem = styled.div`
     align-items: center;
     flex-direction: ${props => props.right ? "row" : "row-reverse"};
     justify-content: space-between;
-    
+    ${mobile({
+        flexDirection :"column-reverse",
+        height: "715px",
+    })}
 `
 
 const ContentSection = styled.div`
@@ -33,6 +41,12 @@ const ContentSection = styled.div`
     align-items: center;
     justify-content: center;
     box-shadow: var(--Box-Shadow);
+    ${mobile({
+        width: "375px",
+        borderRadius: "0px",
+        borderBottomLeftRadius: "var(--Border-radius)",
+        borderBottomRightRadius: "var(--Border-radius)",
+    })}
 `
 const Header = styled.h2`
     color: var(--Peach);
@@ -43,6 +57,11 @@ const ContentBox = styled.div`
     align-items: center;
     justify-content: flex-start;
     gap: 90px;
+    ${mobile({
+       gap: "15px",
+       flexDirection:"column",
+       textAlign: "center",
+    })}
 `
 
 const Text = styled.p`
@@ -60,6 +79,12 @@ const ImageSection = styled.div`
     &:hover{
         box-shadow: var(--Box-Shadow-Hover);
     }
+    ${mobile({
+        width: "375px",
+        borderRadius: "0px",
+        borderTopLeftRadius: "var(--Border-radius)",
+        borderTopRightRadius: "var(--Border-radius)",
+    })}
 `
 
 const Image = styled.img`
